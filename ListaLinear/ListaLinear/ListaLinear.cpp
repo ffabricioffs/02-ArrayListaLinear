@@ -119,6 +119,12 @@ void buscarElemento()
 		}
 	}
 
-	cout << "O valor consta em " << quantidadeDePosicoes << " posicoes";
+
+	if (quantidadeDePosicoes > 0) {
+		cout << "O valor consta em " << quantidadeDePosicoes << " posicoes";
+	}
+	else {
+		cout << "Esse valor nao consta em nenhuma das posicoes";
+	}
 
 }
