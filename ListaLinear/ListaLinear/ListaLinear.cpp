@@ -97,7 +97,7 @@ void inserirElemento()
 		nElementos++;
 	}
 	else {
-		cout << "Lista cheia";
+		cout << "Lista cheia \n";
 	}
 
 }
@@ -105,5 +105,20 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+	int quantidadeDePosicoes = 0;
+	int valorDoVetor;
+
+	cout << "Qual elemento gostaria de buscar? Informe o valor." << endl;
+	cin >> valorDoVetor;
+	// Verificar se existe o valor em alguma posição do nElementos
+	for (int n = 0; n < nElementos; n++) {
+
+		if (valorDoVetor == lista[n]) {
+			quantidadeDePosicoes++;
+			cout << "O valor esta posicionado no numero " << n << endl;
+		}
+	}
+
+	cout << "O valor consta em " << quantidadeDePosicoes << " posicoes";
 
 }
